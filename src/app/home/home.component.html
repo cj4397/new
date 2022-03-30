@@ -1,13 +1,16 @@
 <body class="h-100 w-100 m-0 p-0" id="main" [ngStyle]="{backgroundImage:'url(assets/img/plain.jpg)'}">
 
 
-    <div class="px-4 py-5  text-center">
+    <div class="px-4   text-center">
         <img class="d-block mx-auto mb-4" src="assets/img/favicon.ico" alt="" height="100">
         <h1 class=" display-5 fw-bold">Welcome to Maker</h1>
         <div class="col-lg-5 mx-auto">
-            <h4 class="lead mb-4">This is made by me(Clyde) for practice.
+            <h4 class="lead mb-4 text-warning">This is made by Clyde for practice portfolio.
             </h4>
-            <h3 class="text-primary">This is made using Angular
+
+            <img id="minepic" class="rounded-circle border border-5 border-primary" src="assets/img/edited 7027.jpg" alt="me">
+
+            <h3 class="text-info">This is made using Angular
                 <fa-icon [icon]="angular"></fa-icon>
                 with Bootstrap
                 <fa-icon [icon]="bootstrap"></fa-icon> and FontAwesome
@@ -15,11 +18,24 @@
             </h3>
             <h2 class="m-3 text-secondary">This is being hosted in Vercel</h2>
         </div>
-        <div class="col-lg-4 mx-auto m-5">
+        <div class="col-lg-4 mx-auto ">
             <h1 class="text-danger">Warning
                 <fa-icon [icon]="warning" [classes]="['fa-beat-fade']" style="--fa-animation-duration: 2s"></fa-icon>
             </h1>
             <h3 class="text-danger">This project is still ongoing</h3>
         </div>
+
+    </div>
+    <div class="col-5 mx-auto text-light py-5">
+        <ul class="d-flex flex-column justify-content-start">
+            <li>I used visual studio code</li>
+            <li>Installed angular 13
+                <fa-icon [icon]="angular"></fa-icon> and node js</li>
+            <li>Installed Bootstrap
+                <fa-icon [icon]="bootstrap"></fa-icon> , FontAwesome
+                <fa-icon [icon]="font"></fa-icon>, Slick, jquery, and SASS </li>
+            <li>Copied, edited then coded</li>
+            <li>Add, commited then pushed to my git repository then hosted to Vercel</li>
+        </ul>
     </div>
 </body>
