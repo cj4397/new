@@ -23,9 +23,86 @@
                         <p class="">{{ product.description }}</p>
                     </div>
                     <div class="bg-light shadow-sm mx-auto position-relative" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                        <img class="position-absolute top-50 start-50 translate-middle" height="auto" width="100%" *ngIf="product.id==1" [src]="p1w" [alt]="">
-                        <img class="position-absolute top-50 start-50 translate-middle" height="auto" width="100%" *ngIf="product.id==2" [src]="p2w" [alt]="">
-                        <img class="position-absolute top-50 start-50 translate-middle" height="auto" width="100%" *ngIf="product.id==3" [src]="p3w" [alt]="">
+                        <div *ngIf="product.id==1">
+                            <img class="position-absolute top-50 start-50 translate-middle" height="auto" width="auto" [src]="p1w" [alt]="" data-bs-toggle="modal" data-bs-target="#p1w">
+                            <div class="modal fade" id="p1w" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="p1w" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered ">
+                                    <div class="modal-content bg-dark">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title" id="p1w">{{ product.name }}</h3>
+
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body ">
+                                            <h4>{{ product.price | currency }}</h4>
+
+                                            <img class="" height="auto" width="auto" [src]="p1w" [alt]="">
+                                            <p class="">{{ product.description }}</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Buy</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div *ngIf="product.id==2">
+                            <img class="position-absolute top-50 start-50 translate-middle" height="auto" width="auto" [src]="p2w" [alt]="" data-bs-toggle="modal" data-bs-target="#p2w">
+
+                            <div class="modal fade" id="p2w" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="p2w" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered ">
+                                    <div class="modal-content bg-dark">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title" id="p1w">{{ product.name }}</h3>
+
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body ">
+                                            <h4>{{ product.price | currency }}</h4>
+
+                                            <img class="" height="auto" width="auto" [src]="p2w" [alt]="">
+                                            <p class="">{{ product.description }}</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Buy</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div *ngIf="product.id==3">
+                            <img class="position-absolute top-50 start-50 translate-middle" height="auto" width="auto" [src]="p3w" [alt]="" data-bs-toggle="modal" data-bs-target="#p3w">
+
+                            <div class="modal fade" id="p3w" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="p3w" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered ">
+                                    <div class="modal-content bg-dark">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title" id="p1w">{{ product.name }}</h3>
+
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body ">
+                                            <h4>{{ product.price | currency }}</h4>
+
+                                            <img class="" height="auto" width="auto" [src]="p3w" [alt]="">
+                                            <p class="">{{ product.description }}</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Buy</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
@@ -35,9 +112,88 @@
                         <p>{{ product.description }}</p>
                     </div>
                     <div class="bg-dark shadow-sm mx-auto position-relative" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                        <img class="position-absolute top-50 start-50 translate-middle" height="auto" width="100%" *ngIf="product.id==1" [src]="p1b" [alt]="">
-                        <img class="position-absolute top-50 start-50 translate-middle" height="auto" width="100%" *ngIf="product.id==2" [src]="p2b" [alt]="">
-                        <img class="position-absolute top-50 start-50 translate-middle" height="auto" width="100%" *ngIf="product.id==3" [src]="p3b" [alt]="">
+
+                        <div *ngIf="product.id==1">
+                            <img class="position-absolute top-50 start-50 translate-middle" height="auto" width="auto" [src]="p1b" [alt]="" data-bs-toggle="modal" data-bs-target="#p1b">
+
+                            <div class="modal fade" id="p1b" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="p1b" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered ">
+                                    <div class="modal-content bg-light">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title" id="p1b">{{ product.name }}</h3>
+
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body ">
+                                            <h4>{{ product.price | currency }}</h4>
+
+                                            <img class="" height="auto" width="auto" [src]="p1b" [alt]="">
+                                            <p class="">{{ product.description }}</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Buy</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div *ngIf="product.id==2">
+                            <img class="position-absolute top-50 start-50 translate-middle" height="auto" width="auto" [src]="p2b" [alt]="" data-bs-toggle="modal" data-bs-target="#p2b">
+
+                            <div class="modal fade" id="p2b" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="p2b" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered ">
+                                    <div class="modal-content bg-light">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title" id="p2b">{{ product.name }}</h3>
+
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body ">
+                                            <h4>{{ product.price | currency }}</h4>
+
+                                            <img class="" height="auto" width="auto" [src]="p2b" [alt]="">
+                                            <p class="">{{ product.description }}</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Buy</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div *ngIf="product.id==3">
+                            <img class="position-absolute top-50 start-50 translate-middle" height="auto" width="auto" [src]="p3b" [alt]="" data-bs-toggle="modal" data-bs-target="#p3b">
+
+                            <div class="modal fade" id="p3b" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="p3b" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered ">
+                                    <div class="modal-content bg-light">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title" id="p3b">{{ product.name }}</h3>
+
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body ">
+                                            <h4>{{ product.price | currency }}</h4>
+
+                                            <img class="" height="auto" width="auto" [src]="p3b" [alt]="">
+                                            <p class="">{{ product.description }}</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Buy</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
                     </div>
                 </div>
             </div>
@@ -50,7 +206,8 @@
                         <h4>{{ product.price | currency }}</h4>
                         <p>{{ product.description }}</p>
                     </div>
-                    <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+                    <div class="bg-dark shadow-sm mx-auto position-relative" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                        <img class="position-absolute top-50 start-50 translate-middle" height="auto" width="auto" [src]="p" [alt]=""></div>
                 </div>
                 <div class="bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
                     <div class="my-3 py-3">
@@ -58,7 +215,8 @@
                         <h4>{{ product.price | currency }}</h4>
                         <p>{{ product.description }}</p>
                     </div>
-                    <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+                    <div class="bg-light shadow-sm mx-auto position-relative" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                        <img class="position-absolute top-50 start-50 translate-middle" height="auto" width="auto" [src]="p" [alt]=""></div>
                 </div>
             </div>
 
@@ -69,7 +227,8 @@
                         <h4>{{ product.price | currency }}</h4>
                         <p>{{ product.description }}</p>
                     </div>
-                    <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+                    <div class="bg-body shadow-sm mx-auto position-relative" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                        <img class="position-absolute top-50 start-50 translate-middle" height="auto" width="auto" [src]="p" [alt]=""></div>
                 </div>
                 <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
                     <div class="my-3 py-3">
@@ -77,7 +236,8 @@
                         <h4>{{ product.price | currency }}</h4>
                         <p>{{ product.description }}</p>
                     </div>
-                    <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+                    <div class="bg-body shadow-sm mx-auto position-relative" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                        <img class="position-absolute top-50 start-50 translate-middle" height="auto" width="auto" [src]="p" [alt]=""></div>
                 </div>
             </div>
 

@@ -11,10 +11,12 @@ export class ProductComponent implements OnInit {
   
   p1w='assets/img/p1w.png'
   p2w='assets/img/p2w.png'
-  p3w='assets/img/p3w.jpg'
+  p3w='assets/img/p3w.png'
   p1b='assets/img/p1b.png'
-  p2b='assets/img/p2b.jpg'
+  p2b='assets/img/p2b.png'
   p3b='assets/img/p3b.png'
+p='assets/img/phone.png'
+
   
   constructor() { }
 
