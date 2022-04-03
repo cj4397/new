@@ -24,6 +24,8 @@ import { StarterComponent } from './starter/starter.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
+import { CartComponent } from './cart/cart.component';
+import { PmodalComponent } from './pmodal/pmodal.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,9 @@ import { NavComponent } from './nav/nav.component';
     SignInComponent,
     StarterComponent,
     HomeComponent,
-    NavComponent
+    NavComponent,
+    CartComponent,
+    PmodalComponent
   ],
   imports: [
     BrowserModule,
