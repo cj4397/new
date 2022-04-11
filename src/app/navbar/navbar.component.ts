@@ -24,14 +24,16 @@ d3=faExclamationTriangle;
   faLink=faLink;
   faBug=faBug;
   caret=faCaretDown;
- val=0;
+  val=0;
 likeval=0;
 dislikeval=0;
 
 count(type:string){
   type==='plus' ? this.val++ & this.likeval++:this.dislikeval-- & this.val--;
 }
- 
+
+
+
   constructor() {}
   
 }

@@ -6,7 +6,7 @@ import { AlbumComponent } from './album/album.component';
 import { BlogComponent } from './blog/blog.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CheckOutComponent } from './check-out/check-out.component';
-import { PmodalComponent } from './pmodal/pmodal.component';
+
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FeaturesComponent } from './features/features.component';
 
@@ -29,7 +29,7 @@ const routes: Routes = [
   { path: 'cart', component: CartComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'features', component: FeaturesComponent },
-  { path: 'modal', component: PmodalComponent, outlet: 'modal'},
+
   { path: 'heroes', component: HeroesComponent },
   { path: 'jumbotron', component: JumbotronComponent },
   

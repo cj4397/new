@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+
 import { Product } from './product';
 
 @Injectable({
@@ -7,8 +8,13 @@ import { Product } from './product';
 export class CartService {
   items: Product[] = [];
 
+
   addToCart(product: Product) {
     this.items.push(product);
+  }
+
+  delitem(item:Product){
+    this.items.splice(this.items.indexOf(item),1)
   }
 
   getItems() {

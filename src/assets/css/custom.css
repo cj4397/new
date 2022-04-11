@@ -5956,7 +5956,7 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 15%;
+  width: 30%;
   padding: 0;
   color: #fff;
   text-align: center;
@@ -6023,9 +6023,9 @@ textarea.form-control-lg {
   display: flex;
   justify-content: center;
   padding: 0;
-  margin-right: 15%;
+  margin-right: 30%;
   margin-bottom: 1rem;
-  margin-left: 15%;
+  margin-left: 30%;
   list-style: none;
 }
 .carousel-indicators [data-bs-target] {

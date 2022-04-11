@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 
+
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-nav',
@@ -8,10 +9,13 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent implements OnInit {
-  cart=faCartShopping
 
-  constructor() { }
+  
 
+ 
+
+ constructor( private cartService: CartService) { }
+ 
   ngOnInit(): void {  }
 
   

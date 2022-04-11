@@ -25,7 +25,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
 import { CartComponent } from './cart/cart.component';
-import { PmodalComponent } from './pmodal/pmodal.component';
+
+
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { PmodalComponent } from './pmodal/pmodal.component';
     HomeComponent,
     NavComponent,
     CartComponent,
-    PmodalComponent
+   
+    
   ],
   imports: [
     BrowserModule,
