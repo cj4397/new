@@ -1,15 +1,46 @@
+<app-nav></app-nav>
+
+<div id="info" *ngIf="windowScrolled">
+
+    <fa-icon type="button" data-bs-toggle="modal" data-bs-target="#modal" [icon]="help" size="2x"></fa-icon>
+
+</div>
+
+<div class="modal" id="modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Tips</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h5>Theme</h5>
+                <p>That is where I put some custom designs/themeplates for websites</p>
+                <h5>Styles</h5>
+                <p>That is where I put some of the style to be used in websites</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 <body class="h-100 w-100 m-0 p-0" id="main" [ngStyle]="{backgroundImage:'url(assets/img/plain.jpg)'}">
 
 
     <div class="px-4   text-center">
-        <img class="d-block mx-auto mb-4" src="assets/img/favicon.ico" alt="" height="100">
+        <img class="d-block mx-auto mb-4" src="assets/img/favicon.ico" alt="" width="auto" height="100px">
         <h1 class=" display-5 fw-bold">Welcome to Maker</h1>
         <div class="col-lg-5 mx-auto">
             <h3 class="lead mb-4  text-warning">Hello</h3>
             <h4 class="lead mb-4 text-warning">My name is Clyde F. Paris and I made this website for practice</h4>
 
 
-            <img id="minepic" class="rounded-circle border border-5 border-primary" src="assets/img/edited 7027.jpg" alt="me">
+            <img id="minepic" width="auto" height="200px" class="rounded-circle border border-5 border-primary" src="assets/img/edited 7027.jpg" alt="me">
 
             <h3 class="text-info">This is made using Angular
                 <fa-icon [icon]="angular"></fa-icon>
@@ -17,9 +48,9 @@
                 <fa-icon [icon]="bootstrap"></fa-icon> and FontAwesome
                 <fa-icon [icon]="font"></fa-icon>
             </h3>
-            <h2 class="m-3 text-secondary">This is being hosted in Vercel</h2>
+            <h2 class="p-3 text-secondary">This is being hosted in Vercel</h2>
         </div>
-        <div class="col-lg-4 mx-auto ">
+        <div class="p-3 col-lg-4 mx-auto ">
             <h1 class="text-danger">Warning
                 <fa-icon [icon]="warning" [classes]="['fa-beat-fade']" style="--fa-animation-duration: 2s"></fa-icon>
             </h1>
@@ -27,16 +58,5 @@
         </div>
 
     </div>
-    <div class="col-5 mx-auto text-light py-5">
-        <ul class="d-flex flex-column justify-content-start">
-            <li>I used visual studio code</li>
-            <li>Installed angular 13
-                <fa-icon [icon]="angular"></fa-icon> and node js</li>
-            <li>Installed Bootstrap
-                <fa-icon [icon]="bootstrap"></fa-icon> , FontAwesome
-                <fa-icon [icon]="font"></fa-icon>, Slick, jquery, and SASS </li>
-            <li>Copied, edited then coded</li>
-            <li>Add, commited then pushed to my git repository then hosted to Vercel</li>
-        </ul>
-    </div>
+
 </body>

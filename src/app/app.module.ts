@@ -13,18 +13,15 @@ import { CheckOutComponent } from './check-out/check-out.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FeaturesComponent } from './features/features.component';
 
-import { HeroesComponent } from './heroes/heroes.component';
-import { JumbotronComponent } from './jumbotron/jumbotron.component';
-
-
 import { PricingComponent } from './pricing/pricing.component';
 import { ProductComponent } from './product/product.component';
 import { SignInComponent } from './sign-in/sign-in.component';
-import { StarterComponent } from './starter/starter.component';
+
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
 import { CartComponent } from './cart/cart.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 
 
@@ -41,17 +38,16 @@ import { CartComponent } from './cart/cart.component';
     DashboardComponent,
     FeaturesComponent,
   
-    HeroesComponent,
-    JumbotronComponent,
     
     
     PricingComponent,
     ProductComponent,
     SignInComponent,
-    StarterComponent,
+
     HomeComponent,
     NavComponent,
     CartComponent,
+    PortfolioComponent,
    
     
   ],
